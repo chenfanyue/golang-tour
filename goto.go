@@ -8,7 +8,7 @@ func findRepeatNumber(nums []int) int {
             v := nums[i]
             if nums[v] == v {
                 res = v
-                goto ret
+                goto ret // goto只能往外层跳
             }
             nums[i], nums[v] = nums[v], nums[i]
         }
